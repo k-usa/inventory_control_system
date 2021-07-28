@@ -1,0 +1,205 @@
+#sidebarCollapse {
+  width: 35px;
+  height: 35px;
+  background: rgb(188 143 143 / 60%);
+  border: none;
+  border-radius: 50%;
+}
+
+#sidebarCollapse i{
+  /* rotate first one */
+  transform: rotate(180deg);
+  border-radius: 50%;
+}
+#sidebarCollapse.active i {
+  /* no rotation */
+  transform: none;
+  /* all bars are visible */
+  opacity: 1;
+  margin: 3px auto;
+  border-radius: 50%;
+  border: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  perspective: 1500px; 
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  background: rgb(0 0 0 / 65%);
+  color: #fff;
+  transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+  transform-origin: center left; /* Set the transformed position of sidebar to center left side. */
+  background-image: url(../img/box.jpg);
+  background-size: cover;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+  transform: rotateY(100deg); /* Rotate sidebar vertically by 100 degrees. */
+  background: rgb(65 105 225 / 80%);
+}
+
+#sidebar .sidebar-header{
+  padding: 20px;
+  background: rgb(0 0 0 / 65%);
+}
+
+#sidebar .sidebar-header a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#sidebar ul.components {
+  /* padding: 20px 0; */
+  border-bottom: 2px solid #fff;
+  background: rgb(0 0 0 / 65%);
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  /* background: rgb(0 0 0 / 65%); */
+  color: #fff;
+  text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+  color: #fff;
+  background: rgb(65 105 225 / 80%);
+}
+
+#sidebar ul li a.active{
+  color: #fff;
+  background: rgb(220 20 60 / 65%);
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  /* background: rgb(0 0 0 / 65%); */
+}
+
+
+
+@media (max-width: 768px) {
+  /* Reversing the behavior of the sidebar: 
+     it'll be rotated vertically and off canvas by default, 
+     collapsing in on toggle button click with removal of 
+     the vertical rotation.   */
+  #sidebar {
+      margin-left: -250px;
+      transform: rotateY(100deg);
+  }
+  #sidebar.active {
+      margin-left: 0;
+      transform: none;
+  }
+
+  /* Reversing the behavior of the bars: 
+     Removing the rotation from the first,
+     last bars and reappear the second bar on default state, 
+     and giving them a vertical margin */
+  
+  #sidebarCollapse.active i {
+      transform: none;
+      opacity: 1;
+      margin: 5px auto;
+      border-radius: 50%;
+      border: none;
+  }
+  /* Removing the vertical margin and make the first and last bars rotate again when the sidebar is open, hiding the second bar */
+  #sidebarCollapse i{
+    /* rotate first one */
+    transform: rotate(180deg);
+    border-radius: 50%;
+    border: none;
+  }
+
+}
+
+#content{
+  width: 100%;
+  padding: 15px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  background: rgb(192 192 192 / 45%);
+  /* position: relative; */
+}
+
+.navbar {
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; 
+  padding: navbar-padding-y navbar-padding-x;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  z-index: 99;
+  /* background: rgb(105 105 105 / 100%); */
+}
+
+
+#menu ul li a.active{
+  color: #fff;
+  background: rgb(220 20 60 / 65%);
+}
+
+#menu ul li a:hover {
+  color: #fff;
+  background: rgb(65 105 225 / 80%);
+}
+
+#profile .card-header{
+  height: 250px;
+  background-image: url(../img/profile.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#scrolltable-stocks.table{
+  table-layout: fixed;
+  display:block;
+  overflow-y:scroll;
+  height:500px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+}
+#scrolltable-items.table{
+  table-layout: fixed;
+  display:block;
+  overflow-y:scroll;
+  height:500px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+}
+
+

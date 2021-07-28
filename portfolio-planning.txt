@@ -1,0 +1,75 @@
+1. title of portfolio
+    Inventory Control System
+
+2.functionalitems [atleast 15 functionalitems]
+
+    [*done] register
+    [*done] login
+    [*done] item list 
+        -> (no, name, purchase prise, salse price, order point(qty) .....)
+    [*done] stock list [Home page]  
+        [*done] -> control in/out (link modal - in/out, details, order no, date)
+        [*done] -> alert ordering point (link order page)
+    [*done] record in/out (each stock)
+        [*done] -> (date, details, in/out/on order(qty), total quantity .....)
+        [*done] -> ref item information
+    [*done] order 
+        [*done] -> input qty & calculate total amount
+        [*done] -> link order list   
+    [*done] order list
+        [*done] -> (no, date, name,category, qty(order/in), status)
+    salse data
+        -> (date, salse amount, purchase amount, profit .....)
+    [*done] add items 
+    [*done] add item categories 
+    edit items
+    edit item categories
+    user list   
+    logout 
+
+    roles:
+        admin (users + add items/item categories, edit items/item categories, ref user list)
+        users (input in/out, order, ref item list/records)
+
+
+-----------divide functionalitems into 2 parts:
+1. major functionalities [priority when coding]
+
+    register
+    login
+    item list
+        -> (no, name, purchase prise, salse price, ordering point(qty) .....)
+    stock list [Home page]
+        -> control in/out (link modal - in/out, details, order no, date)
+        -> alert ordering point (link order page)       
+    record in/out (each stock)
+        -> (date, details, in/out/on order(qty), total quantity .....)
+        -> ref item information
+    add items
+    add item categories  
+    logout 
+
+2. minor functionalities [less priority(extra time)]
+
+    order
+        -> input qty & calculate total amount
+        -> link order list
+    order list
+        -> (no, date, name,category, qty(order/in), status)
+    edit items
+    edit item categories
+    user list
+    salse data
+        -> (date, salse amount, purchase amount, profit .....)
+
+   
+    
+
+
+
+
+
+
+
+
+
