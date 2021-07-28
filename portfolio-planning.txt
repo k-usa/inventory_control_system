@@ -18,14 +18,12 @@
         [*done] -> link order list   
     [*done] order list
         [*done] -> (no, date, name,category, qty(order/in), status)
-    salse data
-        -> (date, salse amount, purchase amount, profit .....)
     [*done] add items 
     [*done] add item categories 
-    edit items
-    edit item categories
-    user list   
-    logout 
+    [*done] edit items
+    [*done] edit item categories
+    [*done] user list   
+    [*done] logout 
 
     roles:
         admin (users + add items/item categories, edit items/item categories, ref user list)
