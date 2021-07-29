@@ -138,7 +138,7 @@
 							</div>
 						<?php }}?>					
 					</div>
-					<table class="table table-hover table-light" id="scrolltable-stock-details">
+					<table class="table table-hover table-light">
 						<thead class="table-dark">
 							<tr>
 								<th>#</th>

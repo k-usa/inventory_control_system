@@ -2,6 +2,14 @@
 session_start();
 class Config
 {
+    // localhost
+    // private $servername ='localhost';
+    // private $username = 'root';
+    // private $password = '';
+    // private $db_name = 'inventory-control-system';
+    // public $conn;
+
+    // heroku
     private $servername ='eu-cdbr-west-01.cleardb.com';
     private $username = 'b9b3c9447ad231';
     private $password = '278ab5c8';
