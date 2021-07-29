@@ -6,10 +6,10 @@ class Config
     private $servername ='localhost';
     private $username = 'root';
     private $password = '';
-    private $db_name = 'inventory-control-system';
+    private $db_name = 'inventory_control_db';
     public $conn;
 
-    // heroku
+    //heroku
     // private $servername ='eu-cdbr-west-01.cleardb.com';
     // private $username = 'b9b3c9447ad231';
     // private $password = '278ab5c8';
